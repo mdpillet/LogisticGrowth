@@ -20,12 +20,13 @@ shinyUI(fluidPage(
                     size than can be supported. Below this number, the population grows, while
                     above it it shrinks. The growth rate (r) determines how fast the population
                     grows when far below the carrying capacity (i.e. in the absence of
-                    density-dependence)."),
+                    density-dependence). A negative r results in negative growth."),
                   withMathJax(p("The difference equation of the model has the following form: 
                                 $$\\Delta n=n(t+1)-n(t)=r \\cdot (1-\\frac{n(t)}{K})\\cdot n(t)$$")),
                   p("To start, enter your parameters in the left panel. When you are ready, click the
                     Plot! button to visualize the population trajectory. Make sure your parameters are 
-                    positive and that numbers are not too large. Try varying the intrinsic growth rate
+                    positive (r may be negative) and that numbers are not too large. 
+                    Try varying the intrinsic growth rate.
                     from 0.5 to 3.1 in steps of 0.4 to visualize the oscillatory behavior of the model.
                     You can see the model results in table form below the plot."),
                   plotOutput("plot"),
