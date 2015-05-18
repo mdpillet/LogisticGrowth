@@ -26,7 +26,7 @@ shinyUI(fluidPage(
                   p("To start, enter your parameters in the left panel. When you are ready, click the
                     Plot! button to visualize the population trajectory. Make sure your parameters are 
                     positive (r may be negative) and that numbers are not too large. 
-                    Try varying the intrinsic growth rate.
+                    Try varying the intrinsic growth rate
                     from 0.5 to 3.1 in steps of 0.4 to visualize the oscillatory behavior of the model.
                     You can see the model results in table form below the plot."),
                   plotOutput("plot"),
